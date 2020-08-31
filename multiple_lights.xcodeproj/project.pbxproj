@@ -1,0 +1,658 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		7E5EDDC47E304CD5B95E661D /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 38B4866A01C3496396CCB0CC /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				F0160702BC5440A287415861 /* CMake Rules */,
+			);
+			dependencies = (
+				4B4C2276BA014A05892F95FD /* PBXTargetDependency */,
+				5A7454A1B9E14ADDABEA9DB6 /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+		E4421810D6CA4F2688AFA4CF /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = C2E1690134EE47379906D18E /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				75DD1358E71C473EB796E53E /* CMake Rules */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		38929D75D09D4D0D97CA67DF /* example.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B795FE0A7A734145959F376B /* example.cpp */; };
+		7D1AAB74128B430EADC69D87 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 019D0C3CF4954A7DA3A99E29 /* main.cpp */; };
+		8B147D7FA00C4ACE89D9F90F /* targa.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FD6A3436F9A043BD9BF5E306 /* targa.cpp */; };
+		B6EDE29B4A7D4EEA9B542234 /* terrain.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 025A784659ED40CDAF05DF9F /* terrain.cpp */; };
+		E4F1EB4D24FB54D400D9470B /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4F1EB4C24FB54D300D9470B /* OpenGL.framework */; };
+		E4F1EB4F24FB54DD00D9470B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4F1EB4E24FB54DD00D9470B /* QuartzCore.framework */; };
+		E4F1EB5124FB54E600D9470B /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4F1EB5024FB54E600D9470B /* IOKit.framework */; };
+		E4F1EB5324FB556D00D9470B /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4F1EB5224FB556D00D9470B /* Cocoa.framework */; };
+		E4F1EB5524FB561B00D9470B /* libglfw3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4F1EB5424FB561B00D9470B /* libglfw3.a */; };
+		E4F1EB5724FB60F600D9470B /* glew.c in Sources */ = {isa = PBXBuildFile; fileRef = E4F1EB5624FB60F600D9470B /* glew.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4859062833C848C7A992C1BF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA94B0A622BE4EF8B405725F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7FBC1A91C41A4594926E05F8;
+			remoteInfo = multiple_lights;
+		};
+		932710F357C74F5C9FC767D0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA94B0A622BE4EF8B405725F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E4421810D6CA4F2688AFA4CF;
+			remoteInfo = ZERO_CHECK;
+		};
+		D6435F1EE2014B01A2F88818 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA94B0A622BE4EF8B405725F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E4421810D6CA4F2688AFA4CF;
+			remoteInfo = ZERO_CHECK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		019D0C3CF4954A7DA3A99E29 /* main.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = main.cpp; path = src/main.cpp; sourceTree = SOURCE_ROOT; };
+		025A784659ED40CDAF05DF9F /* terrain.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = terrain.cpp; path = src/terrain.cpp; sourceTree = SOURCE_ROOT; };
+		2D6308BF62174A07B774EBDA /* GLee.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = GLee.c; path = src/glee/GLee.c; sourceTree = SOURCE_ROOT; };
+		65B1887009E048E09D5294B0 /* multiple_lights */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = multiple_lights; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF5AFAB2AE534F6BA30F424F /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		B5717953419641348B811254 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		B795FE0A7A734145959F376B /* example.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = example.cpp; path = src/example.cpp; sourceTree = SOURCE_ROOT; };
+		E4F1EB4C24FB54D300D9470B /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		E4F1EB4E24FB54DD00D9470B /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		E4F1EB5024FB54E600D9470B /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		E4F1EB5224FB556D00D9470B /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		E4F1EB5424FB561B00D9470B /* libglfw3.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libglfw3.a; path = platforms/osx/libglfw3.a; sourceTree = "<group>"; };
+		E4F1EB5624FB60F600D9470B /* glew.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = glew.c; path = source/common/thirdparty/glew/src/glew.c; sourceTree = "<group>"; };
+		FD6A3436F9A043BD9BF5E306 /* targa.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = targa.cpp; path = src/targa.cpp; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E4F1EB4A24FB54C100D9470B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4F1EB5524FB561B00D9470B /* libglfw3.a in Frameworks */,
+				E4F1EB5324FB556D00D9470B /* Cocoa.framework in Frameworks */,
+				E4F1EB5124FB54E600D9470B /* IOKit.framework in Frameworks */,
+				E4F1EB4F24FB54DD00D9470B /* QuartzCore.framework in Frameworks */,
+				E4F1EB4D24FB54D400D9470B /* OpenGL.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2248F1222C9F4F7DAB77A0B2 /* multiple_lights */ = {
+			isa = PBXGroup;
+			children = (
+				6FB84A0E0E4746E998056E57 /* Source Files */,
+				B5717953419641348B811254 /* CMakeLists.txt */,
+			);
+			name = multiple_lights;
+			sourceTree = "<group>";
+		};
+		2AD71DE6C452427284AA5F69 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				65B1887009E048E09D5294B0 /* multiple_lights */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4C1D261EC6194C6C954FCE87 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		6FB84A0E0E4746E998056E57 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				B795FE0A7A734145959F376B /* example.cpp */,
+				2D6308BF62174A07B774EBDA /* GLee.c */,
+				019D0C3CF4954A7DA3A99E29 /* main.cpp */,
+				FD6A3436F9A043BD9BF5E306 /* targa.cpp */,
+				025A784659ED40CDAF05DF9F /* terrain.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		A477DD7421F84FEF9405B82A = {
+			isa = PBXGroup;
+			children = (
+				E4F1EB5624FB60F600D9470B /* glew.c */,
+				2248F1222C9F4F7DAB77A0B2 /* multiple_lights */,
+				FB55BE719B074781A9D12DE2 /* ALL_BUILD */,
+				2AD71DE6C452427284AA5F69 /* Products */,
+				E4F1EB4B24FB54D300D9470B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E4F1EB4B24FB54D300D9470B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E4F1EB5424FB561B00D9470B /* libglfw3.a */,
+				E4F1EB5224FB556D00D9470B /* Cocoa.framework */,
+				E4F1EB5024FB54E600D9470B /* IOKit.framework */,
+				E4F1EB4E24FB54DD00D9470B /* QuartzCore.framework */,
+				E4F1EB4C24FB54D300D9470B /* OpenGL.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FB55BE719B074781A9D12DE2 /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				4C1D261EC6194C6C954FCE87 /* CMake Rules */,
+				AF5AFAB2AE534F6BA30F424F /* CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7FBC1A91C41A4594926E05F8 /* multiple_lights */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 434F6CAB6E304C6F9CBC1184 /* Build configuration list for PBXNativeTarget "multiple_lights" */;
+			buildPhases = (
+				241C55E04910453A9166DEFE /* Sources */,
+				E4F1EB4A24FB54C100D9470B /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BDCE19475C4244DE9C0CFC53 /* PBXTargetDependency */,
+			);
+			name = multiple_lights;
+			productName = multiple_lights;
+			productReference = 65B1887009E048E09D5294B0 /* multiple_lights */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FA94B0A622BE4EF8B405725F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1000;
+			};
+			buildConfigurationList = CC5DA0A7A05143ACBF26BC8F /* Build configuration list for PBXProject "multiple_lights" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A477DD7421F84FEF9405B82A;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7E5EDDC47E304CD5B95E661D /* ALL_BUILD */,
+				E4421810D6CA4F2688AFA4CF /* ZERO_CHECK */,
+				7FBC1A91C41A4594926E05F8 /* multiple_lights */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		75DD1358E71C473EB796E53E /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/joshuadahl/Desktop/Tools/OpenGL\\ Book\\ Examples/chapter_8/multiple_lights -f /Users/joshuadahl/Desktop/Tools/OpenGL\\ Book\\ Examples/chapter_8/multiple_lights/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.make$CONFIGURATION OBJDIR=$(basename \"$OBJECT_FILE_DIR_normal\") all";
+			showEnvVarsInLog = 0;
+		};
+		F0160702BC5440A287415861 /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/joshuadahl/Desktop/Tools/OpenGL\\ Book\\ Examples/chapter_8/multiple_lights -f /Users/joshuadahl/Desktop/Tools/OpenGL\\ Book\\ Examples/chapter_8/multiple_lights/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION OBJDIR=$(basename \"$OBJECT_FILE_DIR_normal\") all";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		241C55E04910453A9166DEFE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4F1EB5724FB60F600D9470B /* glew.c in Sources */,
+				38929D75D09D4D0D97CA67DF /* example.cpp in Sources */,
+				7D1AAB74128B430EADC69D87 /* main.cpp in Sources */,
+				8B147D7FA00C4ACE89D9F90F /* targa.cpp in Sources */,
+				B6EDE29B4A7D4EEA9B542234 /* terrain.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4B4C2276BA014A05892F95FD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E4421810D6CA4F2688AFA4CF /* ZERO_CHECK */;
+			targetProxy = 932710F357C74F5C9FC767D0 /* PBXContainerItemProxy */;
+		};
+		5A7454A1B9E14ADDABEA9DB6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7FBC1A91C41A4594926E05F8 /* multiple_lights */;
+			targetProxy = 4859062833C848C7A992C1BF /* PBXContainerItemProxy */;
+		};
+		BDCE19475C4244DE9C0CFC53 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E4421810D6CA4F2688AFA4CF /* ZERO_CHECK */;
+			targetProxy = D6435F1EE2014B01A2F88818 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		002FC22C096F4C0090689F47 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				HEADER_SEARCH_PATHS = "\"$(PROJECT_DIR)/source/common/thirdparty\"";
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/platforms/osx";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Users/joshuadahl/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk;
+				SYMROOT = "/Users/joshuadahl/Desktop/Tools/OpenGL Book Examples/chapter_8/multiple_lights/build";
+			};
+			name = Release;
+		};
+		181C24E6D1EB48BCAD0EEA87 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				HEADER_SEARCH_PATHS = "\"$(PROJECT_DIR)/source/common/thirdparty\"";
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/platforms/osx";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Users/joshuadahl/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk;
+				SYMROOT = "/Users/joshuadahl/Desktop/Tools/OpenGL Book Examples/chapter_8/multiple_lights/build";
+			};
+			name = RelWithDebInfo;
+		};
+		1B953856EF724780AC1FE9D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/joshuadahl/Desktop/Tools/OpenGL Book Examples/chapter_8/multiple_lights";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Debug;
+		};
+		1EE476B2E2A841FC80B21020 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				HEADER_SEARCH_PATHS = "\"$(PROJECT_DIR)/source/common/thirdparty\"";
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/platforms/osx";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Users/joshuadahl/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk;
+				SYMROOT = "/Users/joshuadahl/Desktop/Tools/OpenGL Book Examples/chapter_8/multiple_lights/build";
+			};
+			name = Debug;
+		};
+		4197FF5F75054B00BC860C40 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"\"/Users/joshuadahl/Desktop/Tools/OpenGL Book Examples/chapter_8/multiple_lights/include\"",
+					"\"$(PROJECT_DIR)/source/common/\"/**",
+				);
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = "\"/Users/joshuadahl/Desktop/Tools/OpenGL Book Examples/chapter_8/multiple_lights/lib\"";
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/platforms/osx";
+				OTHER_CFLAGS = "    -DNDEBUG  ";
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG  ";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = multiple_lights;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/joshuadahl/Desktop/Tools/OpenGL Book Examples/chapter_8/multiple_lights";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = MinSizeRel;
+		};
+		5D332FE8235B4F58A78C38A0 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/joshuadahl/Desktop/Tools/OpenGL Book Examples/chapter_8/multiple_lights";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = RelWithDebInfo;
+		};
+		74D91762C2B94D4AA13F341B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/joshuadahl/Desktop/Tools/OpenGL Book Examples/chapter_8/multiple_lights";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Release;
+		};
+		82C4938EFDC449038DEA917B /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"\"/Users/joshuadahl/Desktop/Tools/OpenGL Book Examples/chapter_8/multiple_lights/include\"",
+					"\"$(PROJECT_DIR)/source/common/\"/**",
+				);
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = "\"/Users/joshuadahl/Desktop/Tools/OpenGL Book Examples/chapter_8/multiple_lights/lib\"";
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/platforms/osx";
+				OTHER_CFLAGS = "       -DNDEBUG  ";
+				OTHER_CPLUSPLUSFLAGS = "       -DNDEBUG  ";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = multiple_lights;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/joshuadahl/Desktop/Tools/OpenGL Book Examples/chapter_8/multiple_lights";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = RelWithDebInfo;
+		};
+		B00BB3185D17451EBF575B87 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/joshuadahl/Desktop/Tools/OpenGL Book Examples/chapter_8/multiple_lights";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = RelWithDebInfo;
+		};
+		B0CA255D31EE43ABB82CD68A /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/joshuadahl/Desktop/Tools/OpenGL Book Examples/chapter_8/multiple_lights";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = MinSizeRel;
+		};
+		B1C7453488874B4FA719EE58 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/joshuadahl/Desktop/Tools/OpenGL Book Examples/chapter_8/multiple_lights";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Debug;
+		};
+		C455C636BE6E4BBC8717E1ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"\"/Users/joshuadahl/Desktop/Tools/OpenGL Book Examples/chapter_8/multiple_lights/include\"",
+					"\"$(PROJECT_DIR)/source/common/\"/**",
+				);
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = "\"/Users/joshuadahl/Desktop/Tools/OpenGL Book Examples/chapter_8/multiple_lights/lib\"";
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/platforms/osx";
+				OTHER_CFLAGS = "    -DNDEBUG  ";
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG  ";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = multiple_lights;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/joshuadahl/Desktop/Tools/OpenGL Book Examples/chapter_8/multiple_lights";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Release;
+		};
+		D28A792FC7B8412A8F6C1DB0 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/joshuadahl/Desktop/Tools/OpenGL Book Examples/chapter_8/multiple_lights";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = MinSizeRel;
+		};
+		E16EA9846594441AAD998F80 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"\"/Users/joshuadahl/Desktop/Tools/OpenGL Book Examples/chapter_8/multiple_lights/include\"",
+					"\"$(PROJECT_DIR)/source/common/\"/**",
+				);
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = "\"/Users/joshuadahl/Desktop/Tools/OpenGL Book Examples/chapter_8/multiple_lights/lib\"";
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/platforms/osx";
+				OTHER_CFLAGS = "    ";
+				OTHER_CPLUSPLUSFLAGS = "    ";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = multiple_lights;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/joshuadahl/Desktop/Tools/OpenGL Book Examples/chapter_8/multiple_lights";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Debug;
+		};
+		EB2D46C96C7D42B8A7D4847F /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				HEADER_SEARCH_PATHS = "\"$(PROJECT_DIR)/source/common/thirdparty\"";
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/platforms/osx";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Users/joshuadahl/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk;
+				SYMROOT = "/Users/joshuadahl/Desktop/Tools/OpenGL Book Examples/chapter_8/multiple_lights/build";
+			};
+			name = MinSizeRel;
+		};
+		EC945F54EC8D452983F3C027 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/joshuadahl/Desktop/Tools/OpenGL Book Examples/chapter_8/multiple_lights";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		38B4866A01C3496396CCB0CC /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1C7453488874B4FA719EE58 /* Debug */,
+				EC945F54EC8D452983F3C027 /* Release */,
+				D28A792FC7B8412A8F6C1DB0 /* MinSizeRel */,
+				5D332FE8235B4F58A78C38A0 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		434F6CAB6E304C6F9CBC1184 /* Build configuration list for PBXNativeTarget "multiple_lights" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E16EA9846594441AAD998F80 /* Debug */,
+				C455C636BE6E4BBC8717E1ED /* Release */,
+				4197FF5F75054B00BC860C40 /* MinSizeRel */,
+				82C4938EFDC449038DEA917B /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		C2E1690134EE47379906D18E /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1B953856EF724780AC1FE9D5 /* Debug */,
+				74D91762C2B94D4AA13F341B /* Release */,
+				B0CA255D31EE43ABB82CD68A /* MinSizeRel */,
+				B00BB3185D17451EBF575B87 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		CC5DA0A7A05143ACBF26BC8F /* Build configuration list for PBXProject "multiple_lights" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1EE476B2E2A841FC80B21020 /* Debug */,
+				002FC22C096F4C0090689F47 /* Release */,
+				EB2D46C96C7D42B8A7D4847F /* MinSizeRel */,
+				181C24E6D1EB48BCAD0EEA87 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FA94B0A622BE4EF8B405725F /* Project object */;
+}

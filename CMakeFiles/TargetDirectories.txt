@@ -1,0 +1,3 @@
+/Users/joshuadahl/Desktop/Tools/OpenGL Book Examples/chapter_8/multiple_lights/CMakeFiles/multiple_lights.dir
+/Users/joshuadahl/Desktop/Tools/OpenGL Book Examples/chapter_8/multiple_lights/CMakeFiles/ALL_BUILD.dir
+/Users/joshuadahl/Desktop/Tools/OpenGL Book Examples/chapter_8/multiple_lights/CMakeFiles/ZERO_CHECK.dir
